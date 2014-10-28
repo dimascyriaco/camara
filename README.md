@@ -1,29 +1,31 @@
 # Camara
 
-TODO: Write a gem description
+É uma biblioteca para acesso aos webservices da Camera dos Deputados.
 
-## Installation
+## Instalação
 
-Add this line to your application's Gemfile:
+Adicione esta linha aos seu Gemfile:
 
     gem 'camara'
 
-And then execute:
+E execute:
 
     $ bundle
 
-Or install it yourself as:
+Ou instale você mesmo:
 
     $ gem install camara
 
-## Usage
+## Uso
 
-TODO: Write usage instructions here
+    deputados = Camara::Deputados.obter_deputados # => [<Deputado>, <Deputado>, ...]
+    deputado = Camara::Deputados.obter_deputado(deputados.first.id) # => <Deputado>
+    deputado.nome # => 'Fulano de Tal'
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/camara/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+1. Faça um fork do projeto ( https://github.com/[my-github-username]/camara/fork )
+2. Crie um branch para a sua feature (`git checkout -b minha-nova-feature`)
+3. Commit suas mudanças (`git commit -am 'Adicionada nova feature'`)
+4. Faça push para o branch (`git push origin minha-nova-feature`)
+5. Crie um Pull Request
