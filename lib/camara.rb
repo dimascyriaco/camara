@@ -4,29 +4,29 @@ require 'faraday'
 require 'nokogiri'
 
 module Camara
-	extend ActiveSupport::Autoload
+  extend ActiveSupport::Autoload
 
-	autoload :Connection
+  autoload :Connection
 
-	module Deputados
-		extend ActiveSupport::Autoload
+  module Deputados
+    extend ActiveSupport::Autoload
 
-		autoload :Deputado
-		autoload :Client
+    autoload :Deputado
+    autoload :Client
 
-		extend Client
-	end
+    extend Client
+  end
 
-	module Orgaos
-		extend ActiveSupport::Autoload
+  module Orgaos
+    extend ActiveSupport::Autoload
 
-		autoload :Orgao
-		autoload :Client
+    autoload :Orgao
+    autoload :Client
 
-		extend Client
-	end
+    extend Client
+  end
 
-	extend Connection
+  extend Connection
 end
 
 Camara.init
