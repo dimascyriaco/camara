@@ -20,9 +20,11 @@ Ou instale você mesmo:
 
 ## Uso
 
-    deputados = Camara::Deputados.obter_deputados # => [<Deputado>, <Deputado>, ...]
-    deputado = Camara::Deputados.obter_deputado(deputados.first.id) # => <Deputado>
-    deputado.nome # => "Fulano de Tal"
+```ruby
+deputados = Camara::Deputados.obter_deputados # => [<Deputado>, <Deputado>, ...]
+deputado = Camara::Deputados.obter_deputado(deputados.first.id) # => <Deputado>
+deputado.nome # => "Fulano de Tal"
+```
 
 ## Contributing
 
