@@ -1,5 +1,32 @@
-require "camara/version"
+require_relative "camara/version"
+require "active_support/dependencies/autoload"
+require 'faraday'
+require 'nokogiri'
 
 module Camara
-  # Your code goes here...
+	extend ActiveSupport::Autoload
+
+	autoload :Connection
+
+	module Deputados
+		extend ActiveSupport::Autoload
+
+		autoload :Deputado
+		autoload :Client
+
+		extend Client
+	end
+
+	module Orgaos
+		extend ActiveSupport::Autoload
+
+		autoload :Orgao
+		autoload :Client
+
+		extend Client
+	end
+
+	extend Connection
 end
+
+Camara.init
