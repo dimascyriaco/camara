@@ -1,6 +1,8 @@
+[![Code Climate](https://codeclimate.com/github/dimascyriaco/camara/badges/gpa.svg)](https://codeclimate.com/github/dimascyriaco/camara)
+
 # Camara
 
-É uma biblioteca para acesso aos webservices da Camera dos Deputados.
+Camara é uma biblioteca para acesso aos webservices da Camera dos Deputados.
 
 ## Instalação
 
@@ -20,7 +22,7 @@ Ou instale você mesmo:
 
     deputados = Camara::Deputados.obter_deputados # => [<Deputado>, <Deputado>, ...]
     deputado = Camara::Deputados.obter_deputado(deputados.first.id) # => <Deputado>
-    deputado.nome # => 'Fulano de Tal'
+    deputado.nome # => "Fulano de Tal"
 
 ## Contributing
 
