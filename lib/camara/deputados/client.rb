@@ -6,6 +6,8 @@ module Camara::Deputados::Client
   end
 
   def obter_deputados
-    # /SitCamaraWS/Deputados.asmx/ObterDeputados
+    response = Camara.connection.get "/SitCamaraWS/Deputados.asmx/ObterDeputados"
+    data = Nokogiri::XML response.body
+    data.xpath('//deputado').map { |deputado| Camara::Deputados::Deputado.new(deputado) }
   end
 end
