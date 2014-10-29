@@ -1,0 +1,96 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.camara.gov.br/SitCamaraWS/Deputados.asmx/ObterDetalhesDeputado?ideCadastro=178387&numLegislatura=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Oct 2014 17:48:13 GMT
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      X-Aspnet-Version:
+      - 1.1.4322
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Content-Length:
+      - '2336'
+      Set-Cookie:
+      - BALANCEID=mycluster.node2; path=/;
+      Vary:
+      - User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxEZXB1
+        dGFkb3M+DQogIDxEZXB1dGFkbz4NCiAgICA8bnVtTGVnaXNsYXR1cmE+NTQ8
+        L251bUxlZ2lzbGF0dXJhPg0KICAgIDxlbWFpbD5kZXAuZnJhbmNpc2NvZGVh
+        c3Npc0BjYW1hcmEuZ292LmJyPC9lbWFpbD4NCiAgICA8bm9tZVByb2Zpc3Nh
+        bz4NCiAgICA8L25vbWVQcm9maXNzYW8+DQogICAgPGRhdGFOYXNjaW1lbnRv
+        PjA4LzA5LzE5NjI8L2RhdGFOYXNjaW1lbnRvPg0KICAgIDxkYXRhRmFsZWNp
+        bWVudG8+DQogICAgPC9kYXRhRmFsZWNpbWVudG8+DQogICAgPHVmUmVwcmVz
+        ZW50YWNhb0F0dWFsPlNDPC91ZlJlcHJlc2VudGFjYW9BdHVhbD4NCiAgICA8
+        c2l0dWFjYW9OYUxlZ2lzbGF0dXJhQXR1YWw+RW0gRXhlcmPDrWNpbzwvc2l0
+        dWFjYW9OYUxlZ2lzbGF0dXJhQXR1YWw+DQogICAgPGlkZUNhZGFzdHJvPjE3
+        ODM4NzwvaWRlQ2FkYXN0cm8+DQogICAgPGlkUGFybGFtZW50YXJEZXByZWNh
+        dGVkPjEwMjc3PC9pZFBhcmxhbWVudGFyRGVwcmVjYXRlZD4NCiAgICA8bm9t
+        ZVBhcmxhbWVudGFyQXR1YWw+RlJBTkNJU0NPIERFIEFTU0lTPC9ub21lUGFy
+        bGFtZW50YXJBdHVhbD4NCiAgICA8bm9tZUNpdmlsPkZSQU5DSVNDTyBERSBB
+        U1NJUyBOVU5FUzwvbm9tZUNpdmlsPg0KICAgIDxzZXhvPk08L3NleG8+DQog
+        ICAgPHBhcnRpZG9BdHVhbD4NCiAgICAgIDxpZFBhcnRpZG8+UFQ8L2lkUGFy
+        dGlkbz4NCiAgICAgIDxzaWdsYT5QVDwvc2lnbGE+DQogICAgICA8bm9tZT5Q
+        YXJ0aWRvIGRvcyBUcmFiYWxoYWRvcmVzPC9ub21lPg0KICAgIDwvcGFydGlk
+        b0F0dWFsPg0KICAgIDxnYWJpbmV0ZT4NCiAgICAgIDxudW1lcm8+MjI5PC9u
+        dW1lcm8+DQogICAgICA8YW5leG8+NDwvYW5leG8+DQogICAgICA8dGVsZWZv
+        bmU+MzIxNS01MjI5PC90ZWxlZm9uZT4NCiAgICA8L2dhYmluZXRlPg0KICAg
+        IDxjb21pc3NvZXM+DQogICAgICA8Y29taXNzYW8+DQogICAgICAgIDxpZE9y
+        Z2FvTGVnaXNsYXRpdm9DRD4yMDEwPC9pZE9yZ2FvTGVnaXNsYXRpdm9DRD4N
+        CiAgICAgICAgPHNpZ2xhQ29taXNzYW8+Q0ZUPC9zaWdsYUNvbWlzc2FvPg0K
+        ICAgICAgICA8bm9tZUNvbWlzc2FvPkNvbWlzc8OjbyBkZSBGaW5hbsOnYXMg
+        ZSBUcmlidXRhw6fDo288L25vbWVDb21pc3Nhbz4NCiAgICAgICAgPGNvbmRp
+        Y2FvTWVtYnJvPlN1cGxlbnRlPC9jb25kaWNhb01lbWJybz4NCiAgICAgICAg
+        PGRhdGFFbnRyYWRhPjAzLzA5LzIwMTQ8L2RhdGFFbnRyYWRhPg0KICAgICAg
+        ICA8ZGF0YVNhaWRhPg0KICAgICAgICA8L2RhdGFTYWlkYT4NCiAgICAgIDwv
+        Y29taXNzYW8+DQogICAgICA8Y29taXNzYW8+DQogICAgICAgIDxpZE9yZ2Fv
+        TGVnaXNsYXRpdm9DRD4yMDA5PC9pZE9yZ2FvTGVnaXNsYXRpdm9DRD4NCiAg
+        ICAgICAgPHNpZ2xhQ29taXNzYW8+Q0U8L3NpZ2xhQ29taXNzYW8+DQogICAg
+        ICAgIDxub21lQ29taXNzYW8+Q29taXNzw6NvIGRlIEVkdWNhw6fDo288L25v
+        bWVDb21pc3Nhbz4NCiAgICAgICAgPGNvbmRpY2FvTWVtYnJvPlRpdHVsYXI8
+        L2NvbmRpY2FvTWVtYnJvPg0KICAgICAgICA8ZGF0YUVudHJhZGE+MDMvMDkv
+        MjAxNDwvZGF0YUVudHJhZGE+DQogICAgICAgIDxkYXRhU2FpZGE+DQogICAg
+        ICAgIDwvZGF0YVNhaWRhPg0KICAgICAgPC9jb21pc3Nhbz4NCiAgICA8L2Nv
+        bWlzc29lcz4NCiAgICA8Y2FyZ29zQ29taXNzb2VzIC8+DQogICAgPHBlcmlv
+        ZG9zRXhlcmNpY2lvPg0KICAgICAgPHBlcmlvZG9FeGVyY2ljaW8+DQogICAg
+        ICAgIDxzaWdsYVVGUmVwcmVzZW50YWNhbz5TQzwvc2lnbGFVRlJlcHJlc2Vu
+        dGFjYW8+DQogICAgICAgIDxzaXR1YWNhb0V4ZXJjaWNpbz5TdXBsZW50ZTwv
+        c2l0dWFjYW9FeGVyY2ljaW8+DQogICAgICAgIDxkYXRhSW5pY2lvPjIwLzA4
+        LzIwMTQ8L2RhdGFJbmljaW8+DQogICAgICAgIDxkYXRhRmltPg0KICAgICAg
+        ICA8L2RhdGFGaW0+DQogICAgICAgIDxpZENhdXNhRmltRXhlcmNpY2lvPg0K
+        ICAgICAgICA8L2lkQ2F1c2FGaW1FeGVyY2ljaW8+DQogICAgICAgIDxkZXNj
+        cmljYW9DYXVzYUZpbUV4ZXJjaWNpbz4NCiAgICAgICAgPC9kZXNjcmljYW9D
+        YXVzYUZpbUV4ZXJjaWNpbz4NCiAgICAgICAgPGlkQ2FkYXN0cm9QYXJsYW1l
+        bnRhckFudGVyaW9yPjE2MDYwNDwvaWRDYWRhc3Ryb1BhcmxhbWVudGFyQW50
+        ZXJpb3I+DQogICAgICA8L3BlcmlvZG9FeGVyY2ljaW8+DQogICAgPC9wZXJp
+        b2Rvc0V4ZXJjaWNpbz4NCiAgICA8aGlzdG9yaWNvTm9tZVBhcmxhbWVudGFy
+        IC8+DQogICAgPGZpbGlhY29lc1BhcnRpZGFyaWFzIC8+DQogICAgPGhpc3Rv
+        cmljb0xpZGVyIC8+DQogIDwvRGVwdXRhZG8+DQo8L0RlcHV0YWRvcz4=
+    http_version: 
+  recorded_at: Wed, 29 Oct 2014 17:48:16 GMT
+recorded_with: VCR 2.9.3
