@@ -26,7 +26,7 @@ deputado = Camara::Deputados.obter_deputado(deputados.first.id) # => <Deputado>
 deputado.nome # => "Fulano de Tal"
 ```
 
-## Contributing
+## Contribuindo
 
 1. Faça um fork do projeto ( https://github.com/[my-github-username]/camara/fork )
 2. Crie um branch para a sua feature (`git checkout -b minha-nova-feature`)
