@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Camara::VERSION
   spec.authors       = ["Dimas Cyriaco"]
   spec.email         = ["dimascyriaco@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Camara é uma biblioteca para acesso aos webservices da Camera dos Deputados.}
+  spec.description   = %q{Camara é uma biblioteca para acesso aos webservices da Camera dos Deputados.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -20,7 +20,8 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
-  spec.add_development_dependency "minitest"
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "guard-rspec"
   spec.add_development_dependency "pry"
   spec.add_dependency 'activesupport'
   spec.add_dependency 'faraday'
