@@ -1,5 +1,6 @@
 [![Code Climate](https://codeclimate.com/github/dimascyriaco/camara/badges/gpa.svg)](https://codeclimate.com/github/dimascyriaco/camara)
 [![Build Status](https://travis-ci.org/dimascyriaco/camara.svg?branch=master)](https://travis-ci.org/dimascyriaco/camara)
+[![Coverage Status](https://coveralls.io/repos/dimascyriaco/camara/badge.png?branch=master)](https://coveralls.io/r/dimascyriaco/camara?branch=master)
 
 # Camara
 
