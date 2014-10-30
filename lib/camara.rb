@@ -7,6 +7,7 @@ module Camara
   extend ActiveSupport::Autoload
 
   autoload :Connection
+  autoload :XmlFields
 
   module Deputados
     extend ActiveSupport::Autoload

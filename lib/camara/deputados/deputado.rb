@@ -1,7 +1,8 @@
-class Camara::Deputados::Deputado
-  attr_reader :nome
+require 'active_support/core_ext/string/inflections'
+require 'active_support/concern'
 
-  def initialize(data)
-    @nome = data.xpath('//nomeCivil').text
-  end
+
+class Camara::Deputados::Deputado
+  include Camara::XmlFields
+  fields :ideCadastro, :condicao, :nome, :nomeCivil, :numLegislatura
 end
