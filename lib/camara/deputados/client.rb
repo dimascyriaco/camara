@@ -14,6 +14,6 @@ module Camara::Deputados::Client
 
   private
     def clean_xml(xml)
-      xml.gsub("\r\n", '').squeeze(' ')
+      xml.gsub(/\r\n\s*/, '')
     end
 end
