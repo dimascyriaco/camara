@@ -1,8 +1,9 @@
-require 'active_support/core_ext/string/inflections'
-require 'active_support/concern'
-
-
 class Camara::Deputados::Deputado
   include Camara::XmlFields
-  fields :ideCadastro, :condicao, :nome, :nomeCivil, :numLegislatura
+
+  fields :email, :nomeProfissao, :dataNascimento, :dataFalecimento, :ufRepresentacaoAtual, :situacaoNaLegislaturaAtual,
+         :ideCadastro, :idParlamentarDeprecated, :nomeParlamentarAtual, :nomeCivil, :sexo, :partidoAtual, :gabinete,
+         :comissoes, :cargosComissoes, :periodosExercicio, :historicoNomeParlamentar, :filiacoesPartidarias,
+         :historicoLider, :condicao, :matricula, :idParlamentar, :nome, :nomeParlamentar, :urlFoto, :uf, :partido,
+         :anexo, :fone, :numLegislatura
 end
