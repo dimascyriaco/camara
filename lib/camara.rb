@@ -1,4 +1,5 @@
 require_relative "camara/version"
+require_relative 'camara/initialize'
 require "active_support/dependencies/autoload"
 require 'faraday'
 require 'nokogiri'
@@ -16,6 +17,7 @@ module Camara
     autoload :Partido
     autoload :Gabinete
     autoload :Comissao
+    autoload :CargoComissao
     autoload :PeriodoExercicio
     autoload :Client
 
