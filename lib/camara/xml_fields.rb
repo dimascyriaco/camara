@@ -49,19 +49,25 @@ module Camara::XmlFields
 
     # @param [Nokogiri::XML::Element] data
     def initialize(data)
-      fields.each do |field_name|
+      Array(fields).each do |field_name|
         case field_name
         when String, Symbol
           instance_variable_set "@#{field_name.to_s.underscore}", data.css("/#{field_name}").text.presence
         when Hash
           field_name.keys.each do |key|
-            instance_variable_set "@#{key.to_s.underscore}", key.to_s.classify.constantize.new(data.css("/#{key}"))
+            if field_name[key].is_a? Array
+              objects = data.css("#{key.to_s.singularize}").map do |data|
+                field_name[key].first.new(data)
+              end
+              instance_variable_set "@#{key.to_s.underscore}", objects
+            else
+              instance_variable_set "@#{key.to_s.underscore}", field_name[key].new(data.css("/#{key}"))
+            end
           end
         end
       end
     end
   end
-
 
   module ClassMethods
     attr_reader :xml_fields
