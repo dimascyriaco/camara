@@ -10,5 +10,8 @@ describe Camara::Deputados::Deputado do
       :urlFoto, :uf, :partido, :anexo, :fone, :numLegislatura
 
     expect(deputado).to have_field :partidoAtual, as_class: Camara::Deputados::Partido
+    expect(deputado).to have_field :gabinete, as_class: Camara::Deputados::Gabinete
+    expect(deputado).to have_field :comissoes, as_class: [Camara::Deputados::Comissao]
+    # expect(deputado).to have_field :periodosExercicio, as_class: [Camara::Deputados::PeriodoExercicio]
   end
 end

@@ -13,6 +13,9 @@ module Camara
     extend ActiveSupport::Autoload
 
     autoload :Deputado
+    autoload :Partido
+    autoload :Gabinete
+    autoload :Comissao
     autoload :Client
 
     extend Client
