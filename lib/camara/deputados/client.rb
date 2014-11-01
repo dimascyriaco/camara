@@ -8,8 +8,8 @@ module Camara::Deputados::Client
   def obter_deputado(id)
     response = Camara.connection.get "/SitCamaraWS/Deputados.asmx/ObterDetalhesDeputado?ideCadastro=#{id}&numLegislatura="
 
-    data = Nokogiri::XML clean_xml(response.body)
-    Camara::Deputados::Deputado.new data.at_css('Deputado')
+    data = Nokogiri::XML(clean_xml(response.body)).at_css('Deputado')
+    Camara::Deputados::Deputado.new data if data
   end
 
   private
