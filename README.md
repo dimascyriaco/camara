@@ -24,7 +24,7 @@ Ou instale você mesmo:
 
 ```ruby
 deputados = Camara::Deputados.obter_deputados # => [<Deputado>, <Deputado>, ...]
-deputado = Camara::Deputados.obter_deputado(deputados.first.id) # => <Deputado>
+deputado = Camara::Deputados.obter_detelhes_deputado(deputados.first.id) # => <Deputado>
 deputado.nome # => "Fulano de Tal"
 ```
 

@@ -5,7 +5,7 @@ module Camara::Deputados::Client
     data.css('deputado').map { |deputado| Camara::Deputados::Deputado.new(deputado) }
   end
 
-  def obter_deputado(id)
+  def obter_detalhes_deputado(id)
     response = Camara.connection.get "/SitCamaraWS/Deputados.asmx/ObterDetalhesDeputado?ideCadastro=#{id}&numLegislatura="
 
     data = Nokogiri::XML(clean_xml(response.body)).at_css('Deputado')
