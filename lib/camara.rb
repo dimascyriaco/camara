@@ -19,6 +19,7 @@ module Camara
     autoload :Comissao
     autoload :CargoComissao
     autoload :PeriodoExercicio
+    autoload :FiliacaoPartidaria
     autoload :Client
 
     extend Client

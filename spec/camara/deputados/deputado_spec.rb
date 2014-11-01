@@ -6,7 +6,7 @@ describe Camara::Deputados::Deputado do
     expect(deputado).to have_fields :email, :nomeProfissao, :dataNascimento, :dataFalecimento, :ufRepresentacaoAtual,
       :situacaoNaLegislaturaAtual, :ideCadastro, :idParlamentarDeprecated, :nomeParlamentarAtual, :nomeCivil, :sexo,
       :partidoAtual, :gabinete, :comissoes, :periodosExercicio, :historicoNomeParlamentar,
-      :filiacoesPartidarias, :historicoLider, :condicao, :matricula, :idParlamentar, :nome, :nomeParlamentar,
+      :historicoLider, :condicao, :matricula, :idParlamentar, :nome, :nomeParlamentar,
       :urlFoto, :uf, :partido, :anexo, :fone, :numLegislatura
 
     expect(deputado).to have_field :partidoAtual, as_class: Camara::Deputados::Partido
@@ -14,5 +14,6 @@ describe Camara::Deputados::Deputado do
     expect(deputado).to have_field :comissoes, as_class: [Camara::Deputados::Comissao]
     expect(deputado).to have_field :periodosExercicio, as_class: [Camara::Deputados::PeriodoExercicio]
     expect(deputado).to have_field :cargosComissoes, as_class: [Camara::Deputados::CargoComissao]
+    expect(deputado).to have_field :filiacoesPartidarias, as_class: [Camara::Deputados::FiliacaoPartidaria]
   end
 end
