@@ -39,6 +39,24 @@ require 'active_support/concern'
 #   person.address.street # => 'Blah'
 #   person.address.number # => '999'
 #
+# Também é possivel configurar campos que contenham um array.
+#
+# @example
+#   class Hobby
+#     include Camara::XmlFields
+#     fields :name
+#   end
+#
+#   class Person
+#     include Camara::XmlFields
+#     fields :name, hobbies: [Hobby]
+#   end
+#
+#   data = Nokogiri::XML "<person><name>Dimas Cyriaco</name><hobbies><hobby><name>Football</name></hobby></hobbies></person>"
+#
+#   person = Person.new(data)
+#   person.hobbies # => [<#Hobby name="Football">]
+#
 module Camara::XmlFields
   extend ActiveSupport::Concern
 
