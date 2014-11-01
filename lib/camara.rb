@@ -16,6 +16,7 @@ module Camara
     autoload :Partido
     autoload :Gabinete
     autoload :Comissao
+    autoload :PeriodoExercicio
     autoload :Client
 
     extend Client
