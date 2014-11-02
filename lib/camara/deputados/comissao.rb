@@ -1,4 +1,4 @@
 class Camara::Deputados::Comissao
   include Camara::XmlFields
-  fields :idOrgaoLegislativoCD, :siglaComissao, :nomeComissao, :condicaoMembro, :dataEntrada
+  fields :idOrgaoLegislativoCD, :siglaComissao, :nomeComissao, :condicaoMembro, :dataEntrada, :dataSaida
 end
