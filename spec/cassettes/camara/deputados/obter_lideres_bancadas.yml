@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.camara.gov.br/SitCamaraWS/Deputados.asmx/ObterLideresBancadas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 02 Nov 2014 00:08:26 GMT
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      X-Aspnet-Version:
+      - 1.1.4322
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Content-Length:
+      - '31670'
+      Set-Cookie:
+      - BALANCEID=mycluster.node2; path=/;
+      Vary:
+      - User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxiYW5jYWRhcz4NCiAgPGJhbmNhZGEgc2lnbGE9IlBUIiBub21lPSJQYXJ0aWRvIGRvcyBUcmFiYWxoYWRvcmVzIj4NCiAgICA8bGlkZXI+DQogICAgICA8bm9tZT5WSUNFTlRJTkhPPC9ub21lPg0KICAgICAgPGlkZUNhZGFzdHJvPjc0MjgzPC9pZGVDYWRhc3Rybz4NCiAgICAgIDxwYXJ0aWRvPlBUPC9wYXJ0aWRvPg0KICAgICAgPHVmPlNQPC91Zj4NCiAgICA8L2xpZGVyPg0KICAgIDx2aWNlX2xpZGVyPg0KICAgICAgPG5vbWU+QUxFU1NBTkRSTyBNT0xPTjwvbm9tZT4NCiAgICAgIDxpZGVDYWRhc3Rybz4xNjA1MTE8L2lkZUNhZGFzdHJvPg0KICAgICAgPHBhcnRpZG8+UFQ8L3BhcnRpZG8+DQogICAgICA8dWY+Uko8L3VmPg0KICAgIDwvdmljZV9saWRlcj4NCiAgICA8dmljZV9saWRlcj4NCiAgICAgIDxub21lPkFSVFVSIEJSVU5PPC9ub21lPg0KICAgICAgPGlkZUNhZGFzdHJvPjE2MDY3ODwvaWRlQ2FkYXN0cm8+DQogICAgICA8cGFydGlkbz5QVDwvcGFydGlkbz4NCiAgICAgIDx1Zj5DRTwvdWY+DQogICAgPC92aWNlX2xpZGVyPg0KICA8L2JhbmNhZGE+DQogIDxiYW5jYWRhIHNpZ2xhPSJQTURCIiBub21lPSJQYXJ0aWRvIGRvIE1vdmltZW50byBEZW1vY3LDoXRpY28gQnJhc2lsZWlybyI+DQogICAgPGxpZGVyPg0KICAgICAgPG5vbWU+RURVQVJETyBDVU5IQTwvbm9tZT4NCiAgICAgIDxpZGVDYWRhc3Rybz43NDE3MzwvaWRlQ2FkYXN0cm8+DQogICAgICA8cGFydGlkbz5QTURCPC9wYXJ0aWRvPg0KICAgICAgPHVmPlJKPC91Zj4NCiAgICA8L2xpZGVyPg0KICAgIDx2aWNlX2xpZGVyPg0KICAgICAgPG5vbWU+TUFSQ0VMTyBDQVNUUk88L25vbWU+DQogICAgICA8aWRlQ2FkYXN0cm8+NzQ0NjA8L2lkZUNhZGFzdHJvPg0KICAgICAgPHBhcnRpZG8+UE1EQjwvcGFydGlkbz4NCiAgICAgIDx1Zj5QSTwvdWY+DQogICAgPC92aWNlX2xpZGVyPg0KICAgIDx2aWNlX2xpZGVyPg0KICAgICAgPG5vbWU+REFSQ8ONU0lPIFBFUk9OREk8L25vbWU+DQogICAgICA8aWRlQ2FkYXN0cm8+NzM4OTE8L2lkZUNhZGFzdHJvPg0KICAgICAgPHBhcnRpZG8+UE1EQjwvcGFydGlkbz4NCiAgICAgIDx1Zj5SUzwvdWY+DQogICAgPC92aWNlX2xpZGVyPg0KICA8L2JhbmNhZGE+DQo8L2JhbmNhZGFzPg===
+    http_version:
+  recorded_at: Sun, 02 Nov 2014 00:08:21 GMT
+recorded_with: VCR 2.9.3

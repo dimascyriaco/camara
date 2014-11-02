@@ -12,6 +12,18 @@ module Camara::Deputados::Client
     Camara::Deputados::Deputado.new data if data
   end
 
+  def obter_partidos_cd
+    response = Camara.connection.get "/SitCamaraWS/Deputados.asmx/ObterPartidosCD"
+    data = Nokogiri::XML clean_xml(response.body)
+    data.css('partido').map { |deputado| Camara::Deputados::Partido.new(deputado) }
+  end
+
+  def obter_lideres_bancadas
+    response = Camara.connection.get "/SitCamaraWS/Deputados.asmx/ObterLideresBancadas"
+    data = Nokogiri::XML clean_xml(response.body)
+    data.css('bancada').map { |bancada| Camara::Deputados::Bancada.new(bancada) }
+  end
+
   private
     def clean_xml(xml)
       xml.gsub(/\r\n\s*/, '')
