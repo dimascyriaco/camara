@@ -24,6 +24,12 @@ module Camara::Deputados::Client
     data.css('bancada').map { |bancada| Camara::Deputados::Bancada.new(bancada) }
   end
 
+  def obter_partidos_bloco_cd(id=nil, legislatura=nil)
+    response = Camara.connection.get "/SitCamaraWS/Deputados.asmx/ObterPartidosBlocoCD?numLegislatura=#{legislatura}&idBloco=#{id}"
+    data = Nokogiri::XML clean_xml(response.body)
+    data.css('bloco').map { |bloco| Camara::Deputados::Bloco.new(bloco) }
+  end
+
   private
     def clean_xml(xml)
       xml.gsub(/\r\n\s*/, '')

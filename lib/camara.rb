@@ -21,6 +21,7 @@ module Camara
     autoload :PeriodoExercicio
     autoload :FiliacaoPartidaria
     autoload :Bancada
+    autoload :Bloco
     autoload :Client
 
     extend Client
