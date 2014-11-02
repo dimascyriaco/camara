@@ -1,6 +1,11 @@
-RSpec::Matchers.define :have_fields do |expected|
+RSpec::Matchers.define :have_fields do |*expected|
   match do |actual|
-    actual.fields && actual.fields.include?(*expected)
+    @missing = expected - actual.fields
+    @missing.none?
+  end
+
+  failure_message do |actual|
+    "expected that #{actual.fields} would contain #{expected}, but #{@missing} is missing."
   end
 end
 
