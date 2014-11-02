@@ -43,4 +43,10 @@ describe Camara::XmlFields do
     expect(person.hobbies).to have(2).items
     expect(person.hobbies.first).to be_an_instance_of(Hobby)
   end
+
+  it 'funciona com attributos' do
+    xml = Nokogiri::XML('<hobby name="Football"></hobby>')
+    hobby = Hobby.new xml
+    expect(hobby.name).to eq('Football')
+  end
 end

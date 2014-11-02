@@ -70,7 +70,8 @@ module Camara::XmlFields
       Array(fields).each do |field_name|
         case field_name
         when String, Symbol
-          instance_variable_set "@#{field_name.to_s.underscore}", data.css("/#{field_name}").text.presence
+          value = data.css("/#{field_name}").text.presence || data.css("@#{field_name}").text.presence rescue nil
+          instance_variable_set "@#{field_name.to_s.underscore}", value
         when Hash
           field_name.keys.each do |key|
             if field_name[key].is_a? Array
