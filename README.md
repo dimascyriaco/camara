@@ -24,13 +24,13 @@ Ou instale você mesmo:
 
 ```ruby
 deputados = Camara::Deputados.obter_deputados # => [<Deputado>, <Deputado>, ...]
-deputado = Camara::Deputados.obter_detelhes_deputado(deputados.first.id) # => <Deputado>
+deputado = Camara::Deputados.obter_detalhes_deputado(deputados.first.id) # => <Deputado>
 deputado.nome # => "Fulano de Tal"
 ```
 
 ## Contribuindo
 
-1. Faça um fork do projeto ( https://github.com/[my-github-username]/camara/fork )
+1. Faça um fork do projeto
 2. Crie um branch para a sua feature (`git checkout -b minha-nova-feature`)
 3. Commit suas mudanças (`git commit -am 'Adicionada nova feature'`)
 4. Faça push para o branch (`git push origin minha-nova-feature`)
